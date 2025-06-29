@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop Admin Dashboard</title>
+    <meta name="description" content="Admin dashboard for managing online shop operations">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop Admin Dashboard</h1>
+        <p>Welcome, Admin! Here you can manage orders, products, and customers.</p>
+        <hr />
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="dashboard">
+            <h2>Welcome to the Dashboard</h2>
+            <p>Here you can find an overview of your shop's performance.</p>
+        </section>
+        <hr>
+        <section id="orders">
+            <h2>Recent Orders</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>John Doe</td>
+                        <td>$150.00</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Jane Smith</td>
+                        <td>$200.00</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>1003</td>
+                        <td>Emily Johnson</td>
+                        <td>$120.00</td>
+                        <td>Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr color="blue"/>
+        <section id="products">
+            <h2>Product List</h2>
+            <ul>
+                <li>Wireless Mouse</li>
+                <li>Bluetooth Headphones</li>
+                <li>USB-C Charger</li>
+                <li>Laptop Stand</li>
+                <li>External Hard Drive</li>
+            </ul>
+        </section>    
+        <hr color="green"/>
+        <section id="media">
+            <h2>Product Media</h2>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop" alt="Featured product image">
+            <video controls>
+                <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>0:00 / 0:05</p>
+            <p>💬</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <br/>
+                <input type="text" id="name" name="name" required>
+                <br/>
+                <label for="email">Email:</label>
+                <br/>
+                <input type="email" id="email" name="email" required>
+                <br/>
+                <label for="message">Message:</label>
+                <br/>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br/>
+                <button type="submit">Submit</button>
+            </form>
+        </section>        
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Shop. All rights reserved.</p>
+        <p>Contact us: contact@onlineshop.com</p>
+    </footer>
+</body>
+</html>
